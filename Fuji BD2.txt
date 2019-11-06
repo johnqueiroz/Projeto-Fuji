@@ -1,0 +1,99 @@
+
+use controleAcademico;
+
+create table usuario(
+login int,
+senha varchar (30) not null,
+nome varchar (30) not null,
+matricula int auto_increment,
+primary key (matricula)
+);
+
+create table professor(
+areaAtuacao varchar (30),
+titulacao varchar (200),
+idprofessor int,
+primary key(idprofessor)
+);
+
+create table turma (
+id_turma int auto_increment,
+semestre int,
+ano float,
+primary key (id_turma)
+);
+
+create table disciplina (
+id_disciplina int auto_increment,
+nome varchar(20),
+area varchar(20),
+primary key(id_disciplina)
+);
+
+create table curso(
+id_curso int auto_increment,
+nome varchar(20),
+tipo varchar(20),
+primary key(id_curso)
+);
+
+create table aluno(
+idAluno int,
+dataVinculo date,
+primary key(idAluno)
+);
+
+create table desempenho (
+idDesempenho int auto_increment,
+primary key(idDesempenho)
+);
+
+create table nota(
+idNota int,
+unidade varchar (20),
+nota float,
+peso float,
+primary key(idNota)
+);
+
+create table endereco(
+idEndereco int,
+rua varchar(20),
+cep int,
+bairro varchar(20),
+numero int,
+complemento varchar(20),
+cidade varchar(20),
+estado varchar(20),
+primary key (idEndereco)
+);
+
+
+alter table usuario add column endereco int;
+
+alter table usuario add foreign key(endereco) references endereco(idEndereco);
+
+alter table professor add column tipo int;
+
+alter table professor add foreign key(tipo) references usuario(matricula);
+
+alter table professor add foreign key(tipo) references turma(id_turma);
+
+alter table professor add foreign key(tipo) references curso(id_curso);
+
+alter table aluno add column tipo int;
+
+alter table aluno add foreign key(tipo) references usuario(matricula);
+
+alter table aluno add foreign key(tipo) references desempenho(idDesempenho);
+
+alter table curso add foreign key(id_curso) references disciplina(id_disciplina);
+
+alter table curso add foreign key(id_curso) references aluno(idAluno);
+
+alter table disciplina add foreign key(id_disciplina) references turma(id_turma);
+
+alter table turma add foreign key(id_turma) references desempenho(idDesempenho);
+
+alter table desempenho add foreign key(idDesempenho) references nota(idNota);
+
