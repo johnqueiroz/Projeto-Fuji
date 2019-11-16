@@ -62,6 +62,19 @@
 							<li class="nav-item">
 									<a class="nav-link" href="#">Contatos</a>
 								</li>
+
+								<div class="btn-group">
+									<button class="btn btn-primary btn-sm" type="button">
+									  John Emerson
+									</button>
+									<button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									  <span class="sr-only">Dropdown</span>
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Perfil</a>
+										<a class="dropdown-item" href="#">Sair</a>
+										
+									</div>
 						</ul>
 
 					</div>
@@ -92,13 +105,13 @@
 					  <br>
 					  <nav>
 							<div class="nav nav-tabs" id="nav-tab" role="tablist">
-							  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Aluno</a>
+							  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Aluno </a>
 
 							  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Professor</a>
 
 							  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Curso</a>
 
-							  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Disciplina</a>
+							  <a class="nav-item nav-link" id="nav-disciplina-tab" data-toggle="tab" href="#nav-disciplina" role="tab" aria-controls="nav-contact" aria-selected="false">Disciplina</a>
 
 							</div>
 
@@ -107,31 +120,39 @@
 						  <div class="tab-content" id="nav-tabContent">
 
 							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-
 									<form>
 											<div class="form-row">
-											  <div class="form-group col-md-6">
-												<label for="inputEmail4">Email</label>
-												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+											  <div class="form-group col-md-4">
+												<label for="inputNome4">Nome</label>
+												<input type="text" class="form-control" id="inputNome4" placeholder="Nome">
 											  </div>
-											  <div class="form-group col-md-6">
-												<label for="inputPassword4">Senha</label>
-												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+											  <div class="form-group col-md-4">
+												<label for="inputMatricula4">Matrícula</label>
+												<input type="number" class="form-control" id="inputMatricula4" placeholder="Matrícula">
+											  </div>
+											  <div class="form-group col-md-4">
+												<label for="inputSenha4">Senha</label>
+												<input type="password" class="form-control" id="inputSenha4" placeholder="Senha">
 											  </div>
 											</div>
 											<div class="form-group">
-											  <label for="inputAddress">Endereço</label>
-											  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+											  <label for="inputEndereco">Endereço</label>
+											  <input type="text" class="form-control" id="inputEndereco" placeholder="Rua ...">
 											</div>
-											<div class="form-group">
-											  <label for="inputAddress2">Endereço 2</label>
-											  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+											<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="inputBairro">Bairro</label>
+												<input type="text" class="form-control" id="inputBairro" placeholder="Bairro ...">
+											  </div>
+											  <div class="form-group col-md-6">
+												<label for="inputComplemento">Complemento</label>
+												<input type="text" class="form-control" id="inputComplemento" placeholder="Ex: Ap 401 ">
+											  </div>
 											</div>
 											<div class="form-row">
 											  <div class="form-group col-md-6">
-												<label for="inputCity">Cidade</label>
-												<input type="text" class="form-control" id="inputCity">
+												<label for="inputCidade">Cidade</label>
+												<input type="text" class="form-control" id="inputCidade">
 											  </div>
 											  <div class="form-group col-md-4">
 												<label for="inputEstado">Estado</label>
@@ -171,93 +192,158 @@
 												<input type="text" class="form-control" id="inputCEP">
 											  </div>
 											</div>
-											<div class="form-group">
-											  <div class="form-check">
-												<input class="form-check-input" type="checkbox" id="gridCheck">
-												<label class="form-check-label" for="gridCheck">
-												  Clique em mim
-												</label>
+											<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="inputData">Data Vínculo</label>
+												<input type="date" class="form-control" id="inputData" placeholder="Data">
+											  </div>
+											  <div class="form-group col-md-6">
+												<label for="inputCurso">Escolher curso</label>
+												<select id="inputCurso" class="form-control">
+												  <option selected>Escolher...</option>
+												  <option>Ciência da Computação</option>
+												  <option>Medicina</option>
+												  <option>Direito</option>
+												</select>
 											  </div>
 											</div>
-											<button type="submit" class="btn btn-primary">Entrar</button>
+										
+											<button type="submit" class="btn btn-primary">Confirmar</button>
 										  </form>
-
+											  
 							</div>
 
 							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
-									<form>
-											<div class="form-row">
-											  <div class="form-group col-md-6">
-												<label for="inputEmail4">Email</label>
-												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-											  </div>
-											  <div class="form-group col-md-6">
-												<label for="inputPassword4">Senha</label>
-												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-											  </div>
-											</div>
-											<div class="form-group">
-											  <label for="inputAddress">Endereço</label>
-											  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-											</div>
-											<div class="form-group">
-											  <label for="inputAddress2">Endereço 2</label>
-											  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-											</div>
-											<div class="form-row">
-											  <div class="form-group col-md-6">
-												<label for="inputCity">Cidade</label>
-												<input type="text" class="form-control" id="inputCity">
-											  </div>
-											  <div class="form-group col-md-4">
-												<label for="inputEstado">Estado</label>
-												<select id="inputEstado" class="form-control">
-												  <option selected>Escolher...</option>
-												  <option>Paraíba</option>
-												  <option>Pernambuco</option>
-												  <option>Alagoas</option>
-												  <option>São Paulo</option>
-												  <option>Rio de Janeiro</option>
-												  <option>Rio Grande do Sul</option>
-												  <option>Santa Catarina</option>
-												  <option>Paraná</option>
-												  <option>Acre</option>
-												  <option>Amapá</option>
-												  <option>Amazonas</option>
-												  <option>Bahia</option>
-												  <option>Ceará</option>
-												  <option>Distrito Federal</option>
-												  <option>Espírito Santo</option>
-												  <option>Goiás</option>
-												  <option>Maranhão</option>
-												  <option>Mato Grosso</option>
-												  <option>Mato Grosso do Sul</option>
-												  <option>Minas Gerais</option>
-												  <option>Pará</option>
-												  <option>Piauí</option>
-												  <option>Rio Grande do Norte</option>
-												  <option>Rôndonia</option>
-												  <option>Roraima</option>
-												  <option>Sergipe</option>
-												  <option>Tocantins</option>
-												</select>
-											  </div>
-											  <div class="form-group col-md-2">
-												<label for="inputCEP">CEP</label>
-												<input type="text" class="form-control" id="inputCEP">
-											  </div>
-											</div>
-											<div class="form-group">
-											  <div class="form-check">
-												<input class="form-check-input" type="checkbox" id="gridCheck">
-												<label class="form-check-label" for="gridCheck">
-												  Clique em mim
-												</label>
-											  </div>
-											</div>
-											<button type="submit" class="btn btn-primary">Entrar</button>
-										  </form>
+								<form>
+									<div class="form-row">
+									  <div class="form-group col-md-4">
+										<label for="inputNome4">Nome</label>
+										<input type="text" class="form-control" id="inputNome4" placeholder="Nome">
+									  </div>
+									  <div class="form-group col-md-4">
+										<label for="inputMatricula4">Matrícula</label>
+										<input type="number" class="form-control" id="inputMatricula4" placeholder="Matrícula">
+									  </div>
+									  <div class="form-group col-md-4">
+										<label for="inputSenha4">Senha</label>
+										<input type="password" class="form-control" id="inputSenha4" placeholder="Senha">
+									  </div>
+									</div>
+									<div class="form-group">
+									  <label for="inputEndereco">Endereço</label>
+									  <input type="text" class="form-control" id="inputEndereco" placeholder="Rua ...">
+									</div>
+									<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputBairro">Bairro</label>
+										<input type="text" class="form-control" id="inputBairro" placeholder="Bairro ...">
+									  </div>
+									  <div class="form-group col-md-6">
+										<label for="inputComplemento">Complemento</label>
+										<input type="text" class="form-control" id="inputComplemento" placeholder="Ex: Ap 401 ">
+									  </div>
+									</div>
+									<div class="form-row">
+									  <div class="form-group col-md-6">
+										<label for="inputCidade">Cidade</label>
+										<input type="text" class="form-control" id="inputCidade">
+									  </div>
+									  <div class="form-group col-md-4">
+										<label for="inputEstado">Estado</label>
+										<select id="inputEstado" class="form-control">
+										  <option selected>Escolher...</option>
+										  <option>Paraíba</option>
+										  <option>Pernambuco</option>
+										  <option>Alagoas</option>
+										  <option>São Paulo</option>
+										  <option>Rio de Janeiro</option>
+										  <option>Rio Grande do Sul</option>
+										  <option>Santa Catarina</option>
+										  <option>Paraná</option>
+										  <option>Acre</option>
+										  <option>Amapá</option>
+										  <option>Amazonas</option>
+										  <option>Bahia</option>
+										  <option>Ceará</option>
+										  <option>Distrito Federal</option>
+										  <option>Espírito Santo</option>
+										  <option>Goiás</option>
+										  <option>Maranhão</option>
+										  <option>Mato Grosso</option>
+										  <option>Mato Grosso do Sul</option>
+										  <option>Minas Gerais</option>
+										  <option>Pará</option>
+										  <option>Piauí</option>
+										  <option>Rio Grande do Norte</option>
+										  <option>Rôndonia</option>
+										  <option>Roraima</option>
+										  <option>Sergipe</option>
+										  <option>Tocantins</option>
+										</select>
+									  </div>
+									  <div class="form-group col-md-2">
+										<label for="inputCEP">CEP</label>
+										<input type="text" class="form-control" id="inputCEP">
+									  </div>
+									</div>
+									<div class="form-row">
+									<div class="form-group col-md-4">
+										<label for="inputData">Data Vínculo</label>
+										<input type="date" class="form-control" id="inputData" placeholder="Data">
+									  </div>
+									  <div class="form-group col-md-4">
+										<label for="inputAtuacao">Área de atuação</label>
+										<select id="inputAtuacao" class="form-control">
+										  <option selected>Escolher...</option>
+										  <option>TI</option>
+										  <option>Saúde</option>
+										  <option>Jurídico</option>
+										</select>
+										</div>
+										<div class="form-group col-md-4">
+											<label for="inputTitulacao">Titulação</label>
+											<input type="text" class="form-control" id="inputTitulacao" placeholder="Titulação">
+										  </div>
+									</div>
+										<p>Cursos:</p>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="inlineCurso1" value="opcao1">
+											<label class="form-check-label" for="inlineCurso1">Ciência da Computação</label>
+									  	</div>
+									  <div class="form-check">
+											<input class="form-check-input" type="checkbox" id="inlineCurso2" value="opcao2">
+											<label class="form-check-label" for="inlineCurso2">Sistemas para Internet</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso3" value="opcao1">
+										<label class="form-check-label" for="inlineCurso3">Medicina</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso4" value="opcao1">
+										<label class="form-check-label" for="inlineCurso4">Enfermagem</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso5" value="opcao1">
+										<label class="form-check-label" for="inlineCurso5">Administração</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso6" value="opcao1">
+										<label class="form-check-label" for="inlineCurso6">Economia</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso7" value="opcao1">
+										<label class="form-check-label" for="inlineCurso7">Direito</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineCurso8" value="opcao1">
+										<label class="form-check-label" for="inlineCurso8">História</label>
+									  </div>
+									
+										
+								
+									<button type="submit" class="btn btn-primary">Confirmar</button>
+								  </form>
 
 							</div>
 
@@ -266,12 +352,16 @@
 									<form>
 											<div class="form-row">
 											  <div class="form-group col-md-6">
-												<label for="inputEmail4">Email institucional</label>
-												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+												<label for="inputNomeCurso">Nome do curso</label>
+												<input type="text" class="form-control" id="inputNomeCurso" placeholder="Nome do Curso">
 											  </div>
-											  <div class="form-group col-md-6">
-												<label for="inputPassword4">Senha do coordenador</label>
-												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+											  <div class="form-group col-md-4">
+												<label for="inputTipo">Tipo</label>
+												<input type="text" class="form-control" id="inputTipo" placeholder="Digite o tipo do curso">
+											  </div>
+											  <div class="form-group col-md-2">
+												<label for="inputID">ID</label>
+												<input type="number" class="form-control" id="inputID" placeholder="Digite o ID">
 											  </div>
 											</div>
 											<div class="form-group">
@@ -322,18 +412,182 @@
 												<input type="text" class="form-control" id="inputCEP">
 											  </div>
 											</div>
-											<div class="form-group">
-											  <div class="form-check">
-												<input class="form-check-input" type="checkbox" id="gridCheck">
-												<label class="form-check-label" for="gridCheck">
-												  Clique em mim
-												</label>
-											  </div>
-											</div>
-											<button type="submit" class="btn btn-primary">Entrar</button>
+
+											<p>Disciplinas:</p>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="inlineDiscp1" value="opcao1">
+											<label class="form-check-label" for="inlineDiscp1">Cálculo Integral</label>
+									  	</div>
+									  <div class="form-check">
+											<input class="form-check-input" type="checkbox" id="inlineDiscp2" value="opcao2">
+											<label class="form-check-label" for="inlineDiscp2">Estatística</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp3" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp3">Banco de dados</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp4" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp4">Programação Web</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp5" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp5">Design de Interação</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp6" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp6">Gestão de Projetos</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp7" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp7">Anatomia</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp8" value="opcao1">
+										<label class="form-check-label" for="inlineDiscp8">Histologia</label>
+									  </div>
+									  <div class="form-check">
+										<input class="form-check-input" type="checkbox" id="inlineDiscp9" value="opcao2">
+										<label class="form-check-label" for="inlineDiscp9">Microbiologia</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp10" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp10">Bioquimica</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp11" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp11">Fisiologia</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp12" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp12">Farmacologia</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp13" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp13">Administração empresarial</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp14" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp14">Administração publica</label>
+								  </div>
+								  <div class="form-check">
+									<input class="form-check-input" type="checkbox" id="inlineDiscp15" value="opcao1">
+									<label class="form-check-label" for="inlineDiscp15">Microeconomia</label>
+								  </div>
+											
+								
+								<div class="form-check">
+								  <input class="form-check-input" type="checkbox" id="inlineDiscp16" value="opcao2">
+								  <label class="form-check-label" for="inlineDiscp16">Economia politica</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp17" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp17">Introdução ao direito</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp18" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp18">Direito penal</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp19" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp19">Filosofia</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp20" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp20">Direito civil</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp21" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp21">Historia do brasil</label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="inlineDiscp22" value="opcao1">
+							  <label class="form-check-label" for="inlineDiscp22">Sociologia</label>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="inlineDiscp23" value="opcao1">
+								<label class="form-check-label" for="inlineDiscp23">Historia moderna</label>
+							  </div>
+							
+											<button type="submit" class="btn btn-primary">Confirmar</button>
 										  </form>
 
 							</div>
+
+							<div class="tab-pane fade" id="nav-disciplina" role="tabpanel" aria-labelledby="nav-disciplina-tab">
+
+								<form>
+										<div class="form-row">
+										  <div class="form-group col-md-6">
+											<label for="inputEmail4">sdaoiujhusadoiuahdiusah</label>
+											<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+										  </div>
+										  <div class="form-group col-md-6">
+											<label for="inputPassword4">Senha do coordenador</label>
+											<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+										  </div>
+										</div>
+										<div class="form-group">
+										  <label for="inputAddress">Endereço da instituição</label>
+										  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+										</div>
+			
+										<div class="form-row">
+										  <div class="form-group col-md-6">
+											<label for="inputCity">Cidade</label>
+											<input type="text" class="form-control" id="inputCity">
+										  </div>
+										  <div class="form-group col-md-4">
+											<label for="inputEstado">Estado</label>
+											<select id="inputEstado" class="form-control">
+											  <option selected>Escolher...</option>
+											  <option>Paraíba</option>
+											  <option>Pernambuco</option>
+											  <option>Alagoas</option>
+											  <option>São Paulo</option>
+											  <option>Rio de Janeiro</option>
+											  <option>Rio Grande do Sul</option>
+											  <option>Santa Catarina</option>
+											  <option>Paraná</option>
+											  <option>Acre</option>
+											  <option>Amapá</option>
+											  <option>Amazonas</option>
+											  <option>Bahia</option>
+											  <option>Ceará</option>
+											  <option>Distrito Federal</option>
+											  <option>Espírito Santo</option>
+											  <option>Goiás</option>
+											  <option>Maranhão</option>
+											  <option>Mato Grosso</option>
+											  <option>Mato Grosso do Sul</option>
+											  <option>Minas Gerais</option>
+											  <option>Pará</option>
+											  <option>Piauí</option>
+											  <option>Rio Grande do Norte</option>
+											  <option>Rôndonia</option>
+											  <option>Roraima</option>
+											  <option>Sergipe</option>
+											  <option>Tocantins</option>
+											</select>
+										  </div>
+										  <div class="form-group col-md-2">
+											<label for="inputCEP">CEP</label>
+											<input type="text" class="form-control" id="inputCEP">
+										  </div>
+										</div>
+										<div class="form-group">
+										  <div class="form-check">
+											<input class="form-check-input" type="checkbox" id="gridCheck">
+											<label class="form-check-label" for="gridCheck">
+											  Clique em mim
+											</label>
+										  </div>
+										</div>
+										<button type="submit" class="btn btn-primary">Entrar</button>
+									  </form>
+
+						</div>
 
 							
 
