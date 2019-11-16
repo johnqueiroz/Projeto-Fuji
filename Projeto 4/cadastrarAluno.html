@@ -1,0 +1,352 @@
+<html>
+
+	<head>
+
+		<title>Cadastramento</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+		<title>Acadêmico</title>
+	
+		<link rel="stylesheet" href="estilo.css">
+
+			<style>
+					body  {
+					
+					  background-color: whitesmoke;
+					}
+					</style>
+	</head>
+
+		<body>
+
+			
+
+			<div class="container">
+
+				<nav class="navbar navbar-expand-lg	navbar-dark bg-primary">
+
+					<a class="navbar-brand" href="#">Acadêmico - Cadastramento</a>
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+					<div class="collapse navbar-collapse" id="navbarSite">
+
+						<ul class="navbar-nav ml-auto">
+
+							<li class="nav-item">
+								<a class="nav-link" href="#">Início</a>
+							</li>
+
+							<li class="nav-item">
+									<a class="nav-link" href="#">Sobre</a>
+								</li>
+
+							<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="dropdownSite" data-toggle="dropdown">Cursos</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Curso 01</a>
+									<a class="dropdown-item" href="#">Curso 02</a>
+									<a class="dropdown-item" href="#">Curso 03</a>
+									<a class="dropdown-item" href="#">Curso 04</a>
+									<a class="dropdown-item" href="#">Curso 05</a>
+
+								</div>
+
+								</li>
+						
+							<li class="nav-item">
+									<a class="nav-link" href="#">Contatos</a>
+								</li>
+						</ul>
+
+					</div>
+					
+				</nav>
+				
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+						  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner">
+						  <div class="carousel-item active">
+							<img class="d-block img-fluid w-100 h-50" src="faculdade-inverno.png" alt="Primeiro Slide">
+						  </div>
+						  <div class="carousel-item">
+							<img class="d-block img-fluid w-100 h-50" src="estudo.png" alt="Segundo Slide">
+						  </div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="sr-only">Anterior</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  
+						</a>
+					  </div>
+					  <br>
+					  <nav>
+							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							  <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Aluno</a>
+
+							  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Professor</a>
+
+							  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Curso</a>
+
+							  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Disciplina</a>
+
+							</div>
+
+						  </nav>
+
+						  <div class="tab-content" id="nav-tabContent">
+
+							<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+
+									<form>
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputEmail4">Email</label>
+												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+											  </div>
+											  <div class="form-group col-md-6">
+												<label for="inputPassword4">Senha</label>
+												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <label for="inputAddress">Endereço</label>
+											  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+											</div>
+											<div class="form-group">
+											  <label for="inputAddress2">Endereço 2</label>
+											  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+											</div>
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputCity">Cidade</label>
+												<input type="text" class="form-control" id="inputCity">
+											  </div>
+											  <div class="form-group col-md-4">
+												<label for="inputEstado">Estado</label>
+												<select id="inputEstado" class="form-control">
+												  <option selected>Escolher...</option>
+												  <option>Paraíba</option>
+												  <option>Pernambuco</option>
+												  <option>Alagoas</option>
+												  <option>São Paulo</option>
+												  <option>Rio de Janeiro</option>
+												  <option>Rio Grande do Sul</option>
+												  <option>Santa Catarina</option>
+												  <option>Paraná</option>
+												  <option>Acre</option>
+												  <option>Amapá</option>
+												  <option>Amazonas</option>
+												  <option>Bahia</option>
+												  <option>Ceará</option>
+												  <option>Distrito Federal</option>
+												  <option>Espírito Santo</option>
+												  <option>Goiás</option>
+												  <option>Maranhão</option>
+												  <option>Mato Grosso</option>
+												  <option>Mato Grosso do Sul</option>
+												  <option>Minas Gerais</option>
+												  <option>Pará</option>
+												  <option>Piauí</option>
+												  <option>Rio Grande do Norte</option>
+												  <option>Rôndonia</option>
+												  <option>Roraima</option>
+												  <option>Sergipe</option>
+												  <option>Tocantins</option>
+												</select>
+											  </div>
+											  <div class="form-group col-md-2">
+												<label for="inputCEP">CEP</label>
+												<input type="text" class="form-control" id="inputCEP">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <div class="form-check">
+												<input class="form-check-input" type="checkbox" id="gridCheck">
+												<label class="form-check-label" for="gridCheck">
+												  Clique em mim
+												</label>
+											  </div>
+											</div>
+											<button type="submit" class="btn btn-primary">Entrar</button>
+										  </form>
+
+							</div>
+
+							<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+									<form>
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputEmail4">Email</label>
+												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+											  </div>
+											  <div class="form-group col-md-6">
+												<label for="inputPassword4">Senha</label>
+												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <label for="inputAddress">Endereço</label>
+											  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+											</div>
+											<div class="form-group">
+											  <label for="inputAddress2">Endereço 2</label>
+											  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+											</div>
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputCity">Cidade</label>
+												<input type="text" class="form-control" id="inputCity">
+											  </div>
+											  <div class="form-group col-md-4">
+												<label for="inputEstado">Estado</label>
+												<select id="inputEstado" class="form-control">
+												  <option selected>Escolher...</option>
+												  <option>Paraíba</option>
+												  <option>Pernambuco</option>
+												  <option>Alagoas</option>
+												  <option>São Paulo</option>
+												  <option>Rio de Janeiro</option>
+												  <option>Rio Grande do Sul</option>
+												  <option>Santa Catarina</option>
+												  <option>Paraná</option>
+												  <option>Acre</option>
+												  <option>Amapá</option>
+												  <option>Amazonas</option>
+												  <option>Bahia</option>
+												  <option>Ceará</option>
+												  <option>Distrito Federal</option>
+												  <option>Espírito Santo</option>
+												  <option>Goiás</option>
+												  <option>Maranhão</option>
+												  <option>Mato Grosso</option>
+												  <option>Mato Grosso do Sul</option>
+												  <option>Minas Gerais</option>
+												  <option>Pará</option>
+												  <option>Piauí</option>
+												  <option>Rio Grande do Norte</option>
+												  <option>Rôndonia</option>
+												  <option>Roraima</option>
+												  <option>Sergipe</option>
+												  <option>Tocantins</option>
+												</select>
+											  </div>
+											  <div class="form-group col-md-2">
+												<label for="inputCEP">CEP</label>
+												<input type="text" class="form-control" id="inputCEP">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <div class="form-check">
+												<input class="form-check-input" type="checkbox" id="gridCheck">
+												<label class="form-check-label" for="gridCheck">
+												  Clique em mim
+												</label>
+											  </div>
+											</div>
+											<button type="submit" class="btn btn-primary">Entrar</button>
+										  </form>
+
+							</div>
+
+							<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+									<form>
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputEmail4">Email institucional</label>
+												<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+											  </div>
+											  <div class="form-group col-md-6">
+												<label for="inputPassword4">Senha do coordenador</label>
+												<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <label for="inputAddress">Endereço da instituição</label>
+											  <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+											</div>
+				
+											<div class="form-row">
+											  <div class="form-group col-md-6">
+												<label for="inputCity">Cidade</label>
+												<input type="text" class="form-control" id="inputCity">
+											  </div>
+											  <div class="form-group col-md-4">
+												<label for="inputEstado">Estado</label>
+												<select id="inputEstado" class="form-control">
+												  <option selected>Escolher...</option>
+												  <option>Paraíba</option>
+												  <option>Pernambuco</option>
+												  <option>Alagoas</option>
+												  <option>São Paulo</option>
+												  <option>Rio de Janeiro</option>
+												  <option>Rio Grande do Sul</option>
+												  <option>Santa Catarina</option>
+												  <option>Paraná</option>
+												  <option>Acre</option>
+												  <option>Amapá</option>
+												  <option>Amazonas</option>
+												  <option>Bahia</option>
+												  <option>Ceará</option>
+												  <option>Distrito Federal</option>
+												  <option>Espírito Santo</option>
+												  <option>Goiás</option>
+												  <option>Maranhão</option>
+												  <option>Mato Grosso</option>
+												  <option>Mato Grosso do Sul</option>
+												  <option>Minas Gerais</option>
+												  <option>Pará</option>
+												  <option>Piauí</option>
+												  <option>Rio Grande do Norte</option>
+												  <option>Rôndonia</option>
+												  <option>Roraima</option>
+												  <option>Sergipe</option>
+												  <option>Tocantins</option>
+												</select>
+											  </div>
+											  <div class="form-group col-md-2">
+												<label for="inputCEP">CEP</label>
+												<input type="text" class="form-control" id="inputCEP">
+											  </div>
+											</div>
+											<div class="form-group">
+											  <div class="form-check">
+												<input class="form-check-input" type="checkbox" id="gridCheck">
+												<label class="form-check-label" for="gridCheck">
+												  Clique em mim
+												</label>
+											  </div>
+											</div>
+											<button type="submit" class="btn btn-primary">Entrar</button>
+										  </form>
+
+							</div>
+
+							
+
+						  </div>
+
+			</div>
+
+			
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		  
+
+
+		</body>
+</html> 
